@@ -1,6 +1,11 @@
 # sc4-regional-supply-demand
 
-A DLL Plugin for SimCity 4 that implements a basic regional supply/demand system.
+A DLL Plugin for SimCity 4 that implements a basic regional supply/demand system in the form of a region-wide resource pool.
+
+This mod differs from the [BSC Daeley Regional Tracking Mod](https://www.sc4evermore.com/index.php/downloads/download/26-gameplay-mods/144-bsc-daeley-regional-tracking-mod) in that it works independently of the city names and positions. It also lacks the region-wide building tracking features of that mod.
+
+The 'resources' consist of a Uint32 resource id and a Sint64 quantity. The resource ids should be random to prevent conflicts between different mods that use this DLL as a dependency.
+Naming the resources is left up to the mod authors that use this DLL as a dependency. 
 
 The plugin can be downloaded from the Releases tab: https://github.com/0xC0000054/sc4-regional-supply-demand/releases
 
